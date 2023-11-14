@@ -11,7 +11,7 @@ let client;
 (async () => {
   const { getDB } = require("./db");
   require("dotenv").config();
-  const mongoURI = process.env.dsn;
+  const mongoURI = process.env.DSN;
   client = await getDB(mongoURI);
 })();
 
